@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-lifecycle';
+  public isRemoved = false;
+  constructor() {}
+  remove() {
+    this.isRemoved = true;
+  }
 }
